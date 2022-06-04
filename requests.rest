@@ -1,0 +1,43 @@
+### POST QUESTION ###
+
+
+POST http://localhost:4000/api/questions
+Content-Type: application/json
+
+{
+    "category": "Politics",
+    "content": "Duda to prezydent czy pasztetowa?",
+    "answers": [
+        {
+            "content": "tak",
+            "correct": true
+        },
+        {
+            "content": "nie",
+            "correct": false
+        }
+    ],
+    "explanation": "Prawda jest taka ze to obydwa",
+    "link": "https://www.wp.pl"
+}
+
+### GET QUESTIONS ###
+
+GET http://localhost:4000/api/questions
+
+
+
+### GET SCORES ###
+
+GET http://localhost:4000/api/scores
+
+### POST SCORE ###
+
+
+POST http://localhost:4000/api/scores
+content-type: application/json
+
+{
+    "username": "Vladimir",
+    "score": 25
+}

@@ -1,22 +1,24 @@
-import express from 'express';
+import express from 'express'
+import helmet from 'helmet'
+import env from './constants/env'
+import routes from './routes'
 
-import env from './constants/env';
-import routes from './routes';
+import cors from 'cors'
 
-import cors from 'cors';
-
-const app = express();
+const app = express()
 
 app.use(cors())
 
-app.use(express.json());
+app.use(helmet())
 
-app.use(express.urlencoded({extended: true}));
+app.use(express.json())
 
-if(env.NODE_ENV === 'production') {
-    app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }))
+
+if (env.NODE_ENV === 'production') {
+    app.use(express.static('public'))
 }
 
-app.use('/api', routes);
+app.use('/api', routes)
 
-export default app;
+export default app

@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'
 
-const {Schema} = mongoose;
+const { Schema } = mongoose
 
 const questionSchema = new Schema({
     category: {
@@ -13,7 +13,7 @@ const questionSchema = new Schema({
     },
     answers: [
         {
-            content: String, 
+            content: String,
             correct: Boolean,
         },
     ],
@@ -24,9 +24,9 @@ const questionSchema = new Schema({
     link: {
         type: String,
         required: true,
-    }
-});
+    },
+})
 
-const Question = mongoose.model('Question', questionSchema);
+const Question = mongoose.model('Question', questionSchema)
 
-export default Question;
+export default Question

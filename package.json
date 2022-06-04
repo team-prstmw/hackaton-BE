@@ -1,33 +1,40 @@
 {
-  "name": "hackaton-BE",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/team-prstmw/hackaton-BE.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/team-prstmw/hackaton-BE/issues"
-  },
-  "homepage": "https://github.com/team-prstmw/hackaton-BE#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "esm": "^3.2.25",
-    "express": "^4.18.1",
-    "http-status-codes": "^2.2.0",
-    "joi": "^17.6.0",
-    "mongoose": "^6.3.5"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.16"
-  }
+    "name": "hackaton-BE",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "start": "node src/index.js",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/team-prstmw/hackaton-BE.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/team-prstmw/hackaton-BE/issues"
+    },
+    "homepage": "https://github.com/team-prstmw/hackaton-BE#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "esm": "^3.2.25",
+        "express": "^4.18.1",
+        "helmet": "^5.1.0",
+        "http-status-codes": "^2.2.0",
+        "joi": "^17.6.0",
+        "mongoose": "^6.3.5"
+    },
+    "devDependencies": {
+        "eslint-config-prettier": "^8.5.0",
+        "nodemon": "^2.0.16",
+        "prettier": "^2.6.2"
+    }
 }
