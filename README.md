@@ -12,7 +12,7 @@
 
 ### THEN:
 
-`cp .env.example env`
+`cp .env.example .env`
 
 ### TO START SERVER LOCALLY:
 
