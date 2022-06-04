@@ -37,10 +37,10 @@
 `POST http://localhost:4000/scores
 content-type: application/json
 
-{
-    username: String,
-    score: Number
-}
+{<br>
+    username: String,<br>
+    score: Number<br>
+}<br>
 
 `
 
@@ -61,17 +61,17 @@ content-type: application/json
 `POST http://localhost:4000/questions
 content-type: application/json
 
-{
-    category: String,
-    content: String,
-    answers: [
-        {
-            content: String,
-            correct: Boolean
-        }
-    ],
-    explanation: String,
-    link: String
-}
+{<br>
+    category: String,<br>
+    content: String,<br>
+    answers: [<br>
+        {<br>
+            content: String,<br>
+            correct: Boolean<br>
+        }<br>
+    ],<br>
+    explanation: String,<br>
+    link: String<br>
+}<br>
 
 `
