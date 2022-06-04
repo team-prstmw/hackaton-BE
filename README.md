@@ -66,11 +66,11 @@ category: String,
 content: String,
 answers: [
 {
-content: String,
+ content: String,
 correct: Boolean
 }
 ],
-exsplanation: String,
+explanation: String,
 link: String
 }
 
