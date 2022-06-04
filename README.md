@@ -38,8 +38,8 @@
 content-type: application/json
 
 {
-username: String,
-score: Number
+    username: String,
+    score: Number
 }
 
 `
@@ -62,16 +62,16 @@ score: Number
 content-type: application/json
 
 {
-category: String,
-content: String,
-answers: [
-{
- content: String,
-correct: Boolean
-}
-],
-explanation: String,
-link: String
+    category: String,
+    content: String,
+    answers: [
+        {
+            content: String,
+            correct: Boolean
+        }
+    ],
+    explanation: String,
+    link: String
 }
 
 `
