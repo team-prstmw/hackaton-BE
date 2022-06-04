@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-global-assign
-require = require('esm')(module /* , options */);
-// eslint-disable-next-line import/extensions
-module.exports = require('./bootstrap.js');
+require = require('esm')(module /* , options */)
+
+module.exports = require('./bootstrap.js')
