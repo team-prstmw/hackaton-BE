@@ -7,7 +7,7 @@ const schema = Joi.object().keys({
   NODE_ENV: Joi.string().valid('production', 'development', 'test').required(),
   PORT: Joi.number().required(),
   MONGODB_URL: Joi.string().required(),
-  BASE_URL: Joi.string().required(),
+  // BASE_URL: Joi.string().required(),
 });
 
 const { value: envVars, error } = schema.validate(process.env, { stripUnknown: true, convert: true });
