@@ -3,15 +3,11 @@ import helmet from 'helmet'
 import env from './constants/env'
 import routes from './routes'
 
-const cors = require('cors');
+import cors from 'cors'
 
 const app = express()
 
-app.use(
-    cors({
-      origin: 'https://hackaton-fe.vercel.app/',
-    })
-  );
+app.use(cors())
 
 app.use(helmet())
 
